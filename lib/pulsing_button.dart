@@ -3,6 +3,8 @@ library pulsing_button;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+export 'package:pulsing_button/pulsing_button.dart';
+
 class PulsingButton extends StatefulWidget {
   final VoidCallback onPressed, onLongPress;
   final ValueChanged<bool> onHighLightChanged;
