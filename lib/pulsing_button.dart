@@ -92,6 +92,8 @@ class _PulsingButtonState extends State<PulsingButton> with SingleTickerProvider
     _elevationAnimation = Tween<double>(begin: _elevationMultiplier, end: _elevationMultiplier + _elevationEps)
         .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInCirc, reverseCurve: Curves.easeOutCirc));
 
+    _controller.repeat(reverse: true);
+
     super.initState();
   }
 
