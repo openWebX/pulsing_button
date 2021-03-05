@@ -1,3 +1,7 @@
+## [0.0.4] - 2021/03/05
+
+  * [FIXED] Example image
+
 ## [0.0.3] - 2021/03/05
 
   * Added example image
