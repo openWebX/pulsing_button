@@ -1,6 +1,6 @@
 name: pulsing_button
 version: 0.0.1
-description: A pulsing button
+description: A pulsing button for Flutter
 repository: "https://github.com/nubcake94/pulsing_button"
 
 environment:
