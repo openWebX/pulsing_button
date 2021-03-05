@@ -16,6 +16,7 @@ class ExamplePulsingButton extends StatelessWidget {
             child: PulsingButton(
               onPressed: () {},
               child: Icon(Icons.favorite),
+              padding: EdgeInsets.all(16.0),
             ),
           ),
         ),
