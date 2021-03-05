@@ -1,0 +1,16 @@
+name: pulsing_button
+version: 0.0.1
+description: A pulsing button
+repository:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
