@@ -1,6 +1,6 @@
 name: pulsing_button
-version: 0.0.4
-description: A pulsing button for Flutter
+version: 0.0.6
+description: A fully customizable pulsing button for Flutter. Works the same way RawMaterialButton works.
 repository: "https://github.com/nubcake94/pulsing_button"
 
 environment:

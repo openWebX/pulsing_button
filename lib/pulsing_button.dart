@@ -43,7 +43,7 @@ class PulsingButton extends StatefulWidget {
     this.disabledElevation = 0.0,
     this.padding = EdgeInsets.zero,
     this.visualDensity = VisualDensity.standard,
-    this.constraints = const BoxConstraints(minWidth: 88.0, minHeight: 88.0),
+    this.constraints = const BoxConstraints(minWidth: 88.0, minHeight: 88.0, maxWidth: 88, maxHeight: 88),
     this.shape = const CircleBorder(side: BorderSide.none),
     this.animationDuration = const Duration(milliseconds: 1000),
     MaterialTapTargetSize materialTapTargetSize,

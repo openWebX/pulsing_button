@@ -1,3 +1,12 @@
+## [0.0.6] - 2021/03/14
+
+  * [FIXED] Default size not pulsing when stretched
+  * Improved examples
+
+## [0.0.5] - 2021/03/14
+
+  * Improved documentation
+
 ## [0.0.4] - 2021/03/05
 
   * [FIXED] Example image
