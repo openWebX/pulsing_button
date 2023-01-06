@@ -6,27 +6,27 @@ import 'package:flutter/rendering.dart';
 export 'package:pulsing_button/pulsing_button.dart';
 
 class PulsingButton extends StatefulWidget {
-  final VoidCallback onPressed, onLongPress;
-  final ValueChanged<bool> onHighLightChanged;
-  final MouseCursor mouseCursor;
-  final TextStyle textStyle;
-  final Color fillColor, hoverColor, focusColor, highlightColor, splashColor;
+  final VoidCallback? onPressed, onLongPress;
+  final ValueChanged<bool>? onHighLightChanged;
+  final MouseCursor? mouseCursor;
+  final TextStyle? textStyle;
+  final Color? fillColor, hoverColor, focusColor, highlightColor, splashColor;
   final double elevation, hoverElevation, focusElevation, highlightElevation, disabledElevation;
   final EdgeInsetsGeometry padding;
   final VisualDensity visualDensity;
   final BoxConstraints constraints;
   final ShapeBorder shape;
-  final Widget child;
+  final Widget? child;
   final MaterialTapTargetSize materialTapTargetSize;
-  final FocusNode focusNode;
+  final FocusNode? focusNode;
   final Duration animationDuration;
   final bool autofocus;
   final Clip clipBehavior;
   final bool enableFeedback;
 
   const PulsingButton({
-    Key key,
-    @required this.onPressed,
+    Key? key,
+    required this.onPressed,
     this.onLongPress,
     this.onHighLightChanged,
     this.mouseCursor,
@@ -46,7 +46,7 @@ class PulsingButton extends StatefulWidget {
     this.constraints = const BoxConstraints(minWidth: 88.0, minHeight: 88.0, maxWidth: 88, maxHeight: 88),
     this.shape = const CircleBorder(side: BorderSide.none),
     this.animationDuration = const Duration(milliseconds: 1000),
-    MaterialTapTargetSize materialTapTargetSize,
+    MaterialTapTargetSize? materialTapTargetSize,
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
@@ -68,13 +68,13 @@ class PulsingButton extends StatefulWidget {
 }
 
 class _PulsingButtonState extends State<PulsingButton> with SingleTickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
 
-  Animation<double> _sizeAnimation;
+  late Animation<double> _sizeAnimation;
   double _sizeMultiplier = 1.0;
   double _sizeEps = 0.05;
 
-  Animation<double> _elevationAnimation;
+  late Animation<double> _elevationAnimation;
   double _elevationMultiplier = 1.0;
   double _elevationEps = 0.1;
 
